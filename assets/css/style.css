@@ -5,6 +5,7 @@
   --background-one: #D2C9F0;
   --background-two: #4524AD;
 }
+
 /* Estilos iniciais */
 
 * {
@@ -89,7 +90,7 @@ main section#projects {
 }
 
 #projects .project-tile {
-  padding: 24px 64px;  
+  padding: 24px 64px;
 }
 
 .project-tile a {
@@ -110,11 +111,13 @@ section#contact {
 /* Rodape */
 footer {
   flex: 1 1 100vw;
-  padding-top: 3%;
+  justify-content: space-evenly;
+  height: 10vh;
+  padding-top: 1%;
   background-color: var(--background-one);
 }
 
-footer {
+footer p {
   font-size: 20px;
   line-height: 24px;
 }
