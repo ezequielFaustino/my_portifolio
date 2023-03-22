@@ -2,6 +2,8 @@
 :root {
   --menu-color: #4524AD;
   --text-color: #EFE7E0;
+  --background-one: #D2C9F0;
+  --background-two: #AD580E;
 }
 /* Estilos iniciais */
 
@@ -15,9 +17,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 100vw;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin: 3px;
 }
 
@@ -28,6 +27,9 @@ main,
 footer {
   display: flex;
   margin: 3px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 a {
@@ -56,10 +58,11 @@ nav#navbar {
 #welcome-section {
   flex: 1 1 100vw;
   flex-direction: column;
-  background-color: #a1a1a1;
+  height: 100vh;
+  background-color: var(--background-one);
 }
 
-#welcome-section h2 {
+#welcome-section h1 {
   font-size: 64px;
   line-height: 86px;
 }
@@ -72,6 +75,24 @@ nav#navbar {
 /* Section Projects */
 main {
   flex: 20 1 100vw;
+}
+
+main section#projects {
+  flex-direction: column;
+  background-color: #a1a1a1;
+}
+
+section#projects h2 {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+#projects .project-tile {
+  padding: 24px 64px;  
+}
+
+.project-tile a {
+  padding: 12px 32px;
 }
 
 footer {
