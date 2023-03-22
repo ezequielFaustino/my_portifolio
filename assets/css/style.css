@@ -1,9 +1,9 @@
 /* Cores e fontes */
 :root {
-  --menu-color: #4524AD;
+  --menu-color: #AD580E;
   --text-color: #EFE7E0;
   --background-one: #D2C9F0;
-  --background-two: #AD580E;
+  --background-two: #4524AD;
 }
 /* Estilos iniciais */
 
@@ -33,6 +33,11 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+.subtitle {
+  font-size: 40px;
+  line-height: 55px;
 }
 
 /* Cabecalho */
@@ -83,11 +88,6 @@ main section#projects {
   color: var(--text-color);
 }
 
-section#projects h2 {
-  font-size: 40px;
-  line-height: 55px;
-}
-
 #projects .project-tile {
   padding: 24px 64px;  
 }
@@ -112,4 +112,9 @@ footer {
   flex: 1 1 100vw;
   padding-top: 3%;
   background-color: var(--background-one);
+}
+
+footer {
+  font-size: 20px;
+  line-height: 24px;
 }
