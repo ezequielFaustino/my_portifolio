@@ -1,9 +1,58 @@
+/* Estilos iniciais */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100vw;
+  margin: 3px;
+}
+
+header,
+nav,
+section,
+main,
+footer {
+  display: flex;
+  margin: 3px;
+  background-color: #a1a1a1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Cabecalho */
+header {
+  flex: 1 1 100vw;
+}
+
+nav#navbar {
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 200px;
+}
+
+#navbar a {
+  margin: 0 3%;
+  font-size: 20px;
+}
+
+/* Section Welcome */
 #welcome-section {
-  height: 100vh;
+  flex: 1 1 100vw;
+}
+
+/* Section Projects */
+main {
+  flex: 20 1 100vw;
+}
+
+footer {
+  flex: 1 1 100vw;
 }
