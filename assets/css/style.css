@@ -55,8 +55,13 @@ nav#navbar {
 
 #navbar a {
   margin: 0 3%;
-  font-size: 20px;
+  padding: 12px 32px;
+  font-size: 1.5em;
   color: var(--text-color);
+}
+
+#navbar a:hover {
+  opacity: 0.8;
 }
 
 /* Section Welcome */
@@ -120,4 +125,11 @@ footer {
 footer p {
   font-size: 20px;
   line-height: 24px;
+}
+
+/* Media query p/ telas menores */
+@media screen and (max-width: 768px) {
+  #navbar a {
+    /* font-size: 80%; */
+  }
 }
