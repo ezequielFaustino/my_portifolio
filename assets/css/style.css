@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Cores e fontes */
 :root {
   --menu-color: #AD580E;
@@ -38,7 +40,7 @@ a {
 
 .subtitle {
   font-size: 40px;
-  line-height: 55px;
+  line-height: 150%;
 }
 
 /* Cabecalho */
@@ -57,6 +59,7 @@ nav#navbar {
   margin: 0 3%;
   padding: 12px 32px;
   font-size: 1.5em;
+  font-weight: 600;
   color: var(--text-color);
 }
 
@@ -74,12 +77,12 @@ nav#navbar {
 
 #welcome-section h1 {
   font-size: 64px;
-  line-height: 86px;
+  line-height: 150%;
 }
 
 #welcome-section p {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 150%;
 }
 
 /* Section Projects */
@@ -124,12 +127,5 @@ footer {
 
 footer p {
   font-size: 20px;
-  line-height: 24px;
-}
-
-/* Media query p/ telas menores */
-@media screen and (max-width: 768px) {
-  #navbar a {
-    /* font-size: 80%; */
-  }
+  line-height: 150%;
 }

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Media query p/ telas menores */
+/* Typical Device Breakpoints
+--------------------------------
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+Tablet: 768px ate 992px
+Desktop: 992px ate 1200px;
+Grandes telas: acima de 1200px
+*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+  .subtitle {
+    font-size: 30px;
+  }
+
+  /* Menu */
+  #navbar a {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Section Welcome */
+  #welcome-section h1 {
+    font-size: 54px;
+  }
+
+  #welcome-section p {
+    font-size: 20px;
+  }
+
+
+  /* Section Projeto */
+  .project-tile a {
+    font-size: 0.9em;
+  }
+
+  /* Section Contato */
+  #profile-link {
+    font-size: 0.9em;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.9em;
+  }
+
+}
+
+/* P/ dispositivos com tela de ate 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* Section Welcome */
+  #welcome-section h1 {
+    font-size: 74px;
+  }
+}
