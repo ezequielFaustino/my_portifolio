@@ -31,16 +31,35 @@ header {
   grid-area: header;
 
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
+
+  position: sticky;
+  top: 0;
 }
 
-header a {
+li {
+  list-style-type: none;
+}
+
+nav#navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3.75em;
+}
+
+.nav-item a {
   text-decoration: none;
-  padding: 12px 32px;
-  margin: 0 3%;
+  font-size: 1.25em;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
+.nav-item a:hover {
+  color: #0088d2;
+}
+
+/* Section Welcome */
 section#welcome {
   background-color: lightcoral;
   grid-area: welcome;
@@ -63,7 +82,14 @@ article {
   padding: 30px;
 }
 
+.card-img a {
+  background-color: yellow;
+  text-align: center;
+  display: block;
+}
 
+
+/* Section Contact */
 section#contact {
   background-color: cadetblue;
   grid-area: contact;
