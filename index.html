@@ -6,44 +6,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio - Ezequiel Faustino</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/media_query.css">
 </head>
 
 <body>
-  <header>
-    <nav id="navbar">
-      <a href="#welcome-section">Sobre</a>
-      <a href="#projects">Projetos</a>
-      <a href="#contact">Contato</a>
-    </nav>
-  </header>
+  <div class="grid">
 
-  <section id="welcome-section">
-    <h1>Olá, me chamo Ezequiel Faustino</h1>
-    <p>e sou desenvolvedor web.</p>
-  </section>
+    <header>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </header>
 
-  <main>
-    <section id="projects">
-      <h2 class="subtitle">Alguns dos meus projetos</h2>
-      <div class="project-tile">
-        <a href="https://ezequielfaustino.github.io/calculadora_imc/" target="_blank">Calculadora IMC</a>
+    <section id="welcome">
+      <div class="introduce">
+        <h1>Olá, me chamo Ezequiel Faustino</h1>
+        <p>e sou desenvolvedor web.</p>
       </div>
     </section>
-  </main>
 
-  <section id="contact">
-    <h2 class="subtitle">Contato</h2>
-    <a href="https://github.com/ezequielFaustino" target="_blank" id="profile-link">GitHub</a>
-  </section>
+    <section id="projects">
+      <h2>Alguns dos meus projetos</h2>
+    </section>
 
-  <footer>
-    <p>Desenvolvido por Ezequiel Faustino </p>
-    <p>Página de referência: <a href="https://personal-portfolio.freecodecamp.rocks/#projects"
-        target="_blank">freeCodeCamp</a></p>
-  </footer>
+    <main>
+      <article class="card">
+        <div class="card-img">
+          <img src="assets/images/github.png" alt="github logo">
+          <figcaption>Project 1</figcaption>
+        </div>
+      </article>
 
+      <article class="card">
+        <div class="card-img">
+          <img src="assets/images/github.png" alt="github logo">
+          <figcaption>Project 2</figcaption>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="assets/images/github.png" alt="github logo">
+          <figcaption>Project 3</figcaption>
+        </div>
+      </article>
+    </main>
+
+    <section id="contact">
+      <div class="contact-list">
+        <h2>Contate-me</h2>
+        <a href="#">GitHub</a>
+        <a href="#">E-mail</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Desenvolvido por Ezequiel Faustino - <a href="#">Referencia de página</a></p>
+    </footer>
+  </div>
 </body>
 
 </html>
