@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 100vh max-content max-content max-content 100px;
+  grid-template-areas: 
+  "header"
+  "welcome"
+  "projects"
+  "article"
+  "contact"
+  "footer";
+}
+
+header {
+  background-color: lightgreen;
+  grid-area: header;
+}
+
+section#welcome {
+  background-color: lightcoral;
+  grid-area: welcome;
+}
+
+section#projects {
+  grid-area: projects;
+}
+
+article {
+  background-color: blueviolet ;
+  grid-area: article;
+}
+
+section#contact {
+  background-color: cadetblue;
+  grid-area: contact;
+}
+
+footer {
+  background-color: chocolate;
+  grid-area: footer;
+}
