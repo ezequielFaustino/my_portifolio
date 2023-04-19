@@ -1,10 +1,27 @@
 @charset "UTF-8";
 
+/* Colors and Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+:root {
+  --bg-primary-color: #B8621B;
+  --bg-secondary-color: #262A56;
+  --bg-third-color: #E3CCAE;
+  --text-color: #000000;
+  --secondary-text-color: #fff; 
+  --primary-font: 'Open Sans', sans-serif;
+}
+
 /* Estilos iniciais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-color);
 }
 
 .subtitle {
@@ -27,7 +44,7 @@
 
 /* Cabecalho */
 header {
-  background-color: lightgreen;
+  background-color: var(--bg-primary-color);
   grid-area: header;
 
   display: flex;
@@ -50,13 +67,14 @@ nav#navbar .nav-links {
 
 .nav-item a {
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 500;
+  color: var(--secondary-text-color);
   transition: 0.3s ease;
 }
 
 .nav-item a:hover {
-  color: #0088d2;
+  opacity: 0.6;
 }
 
 /* Section Welcome */
