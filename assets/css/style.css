@@ -215,7 +215,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: .5em;
 }
 
 footer a {

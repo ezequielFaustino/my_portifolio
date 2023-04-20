@@ -12,7 +12,7 @@ Grandes telas: acima de 1200px
 
 /* Para telas maiores que 992px */
 @media screen and (min-width: 992px) {
-  
+
   /* Estilos gerais */
   .subtitle {
     font-size: 2.5em;
@@ -47,6 +47,15 @@ Grandes telas: acima de 1200px
   }
 
   /* Footer */
+  footer p,
+  footer a {
+    font-size: 1.3em;
+  }
+
+  footer a {
+    margin-top: 1em;
+  }
+
   footer a:hover {
     opacity: 0.6;
   }
