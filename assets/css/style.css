@@ -147,12 +147,68 @@ article {
 
 /* Section Contact */
 section#contact {
-  background-color: cadetblue;
+  background-color: var(--bg-primary-color);
   grid-area: contact;
+
+  display: flex;
+  flex-direction: column;
 }
 
+#contact h2 {
+  margin-top: 1em;
+}
+
+#contact .contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-color);
+  background: var(--bg-third-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin: 1em 0;
+
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.btn::after, .btn::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background: var(--bg-third-color);
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translate(-12px, -12px);
+}
+
+.btn:hover::after {
+  transform: translate(6px, 6px);
+}
+
+.btn:hover::before {
+  transform: translate(12px, 12px);
+}
+
+/* Footer */
 footer {
-  background-color: chocolate;
+  background-color: var(--bg-secondary-color);
   grid-area: footer;
 
   display: flex;
@@ -163,4 +219,5 @@ footer {
 footer p,
 footer a {
   text-align: center;
+  color: var(--secondary-text-color);
 }
