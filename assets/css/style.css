@@ -30,6 +30,7 @@ a {
 
 .subtitle {
   text-align: center;
+  font-weight: 700;
   font-size: 1.5em;
 }
 
@@ -114,8 +115,7 @@ main#projects {
 }
 
 #projects h2 {
-  border-bottom: 3px solid var(--text-color);
-  width: 80%;
+  text-decoration: underline var(--text-color);
   margin: 1em auto;
 }
 
@@ -216,6 +216,10 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1em;
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 footer p,

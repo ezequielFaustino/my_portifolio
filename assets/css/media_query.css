@@ -9,3 +9,45 @@ Tablet: 768px ate 992px
 Desktop: 992px ate 1200px;
 Grandes telas: acima de 1200px
 */
+
+/* Para telas maiores que 992px */
+@media screen and (min-width: 992px) {
+  
+  /* Estilos gerais */
+  .subtitle {
+    font-size: 2.5em;
+  }
+
+  /* Navegacao */
+  .nav-item a {
+    font-size: 1.5em;
+  }
+
+  /* Section Welcome */
+  #welcome h1 {
+    font-size: 4em;
+  }
+
+  #welcome p {
+    font-size: 2em;
+  }
+
+  /* Section Contato */
+  .contact-list {
+    margin: 1em 0;
+  }
+
+  #contact h2 {
+    margin-bottom: 1em;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    margin-bottom: 1em;
+  }
+
+  /* Footer */
+  footer a:hover {
+    opacity: 0.6;
+  }
+}
